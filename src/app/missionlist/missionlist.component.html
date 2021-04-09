@@ -7,33 +7,33 @@
   
     <!-- Position Column -->
     <ng-container matColumnDef="mission_name">
-      <th style="font-size: 15px; align-items: center; padding: 5px;" mat-header-cell *matHeaderCellDef> Mission Name</th>
-      <td style="align-items: center;" mat-cell *matCellDef="let element"> {{element.mission_name}} </td>
+      <th style="font-size: 20px; align-items: center; padding: 5px;" mat-header-cell *matHeaderCellDef> Mission Name</th>
+      <td style="font-size: 15px; align-items: center;" mat-cell *matCellDef="let element"> {{element.mission_name}} </td>
     </ng-container>
   
     <!-- Name Column -->
     <ng-container matColumnDef="launch_year">
-      <th style="font-size: 15px; align-items: center; padding: 5px;" mat-header-cell *matHeaderCellDef>Launch Year </th>
-      <td style="align-items: center;" mat-cell *matCellDef="let element"> {{element.launch_year}} </td>
+      <th style="font-size: 20px; align-items: center; padding: 5px;" mat-header-cell *matHeaderCellDef>Launch Year </th>
+      <td style="font-size: 15px; align-items: center;" mat-cell *matCellDef="let element"> {{element.launch_year}} </td>
     </ng-container>
   
     <!-- Weight Column -->
     <ng-container matColumnDef="details">
-      <th style="font-size: 15px; align-items: center; padding: 5px;" mat-header-cell *matHeaderCellDef> Details </th>
-      <td style="align-items: center;" mat-cell *matCellDef="let element"> {{element.details}} </td>
+      <th style="font-size: 20px; align-items: center; padding: 5px;" mat-header-cell *matHeaderCellDef> Details </th>
+      <td style="font-size: 15px; align-items: center;" mat-cell *matCellDef="let element"> {{element.details}} </td>
     </ng-container>
   
     <!-- Symbol Column -->
     <ng-container matColumnDef="mission_patch_small">
-      <th style="font-size: 15px; align-items: center; padding: 5px;" mat-header-cell *matHeaderCellDef> Mission Patch Small </th>
-      <td style="align-items: center;" mat-cell *matCellDef="let element"> {{element.links.mission_patch_small}} </td>
+      <th style="font-size: 20px; align-items: center; padding: 5px;" mat-header-cell *matHeaderCellDef> Mission Patch Small </th>
+      <td style="font-size: 15px; align-items: center;" mat-cell *matCellDef="let element"> {{element.links.mission_patch_small}} </td>
     </ng-container>
     <ng-container matColumnDef="Mission details">
-        <th style="font-size: 15px;  align-items: center; padding: 5px;" mat-header-cell *matHeaderCellDef>Mission details</th>
-        <td style="align-items: center;" mat-cell *matCellDef="let element"> <button mat-stroked-button (click)= "openDetailsWithService(element)">Details</button> </td>
+        <th style="font-size: 20px;  align-items: center; padding: 5px;" mat-header-cell *matHeaderCellDef>Mission details</th>
+        <td style="font-size: 15px; align-items: center;" mat-cell *matCellDef="let element"> <button mat-stroked-button (click)= "openDetailsWithService(element)">Details</button> </td>
     </ng-container>
 
-    <tr style="font-size: 15px; align-items: center; padding: 5px;" mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr style="font-size: 20px; align-items: center; padding: 5px;" mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
 </div>

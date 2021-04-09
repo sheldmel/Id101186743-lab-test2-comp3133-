@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { MatTableModule } from '@angular/material/table'; 
-import {MatButtonModule} from '@angular/material/button' 
+import {MatButtonModule} from '@angular/material/button' ;
+import {MatCardModule} from '@angular/material/card'
 import { AppComponent } from './app.component';
 import { MissionlistComponent } from './missionlist/missionlist.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
@@ -38,6 +39,7 @@ const appRoutes: Routes = [
     BrowserModule,
     HttpClientModule,
     MatTableModule,
+    MatCardModule,
     MatButtonModule,
     MatPaginatorModule,
     NoopAnimationsModule

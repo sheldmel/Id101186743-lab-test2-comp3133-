@@ -1,6 +1,31 @@
-<p>Mission name: {{missionDetails.mission_name}}</p>
-<p>Mission Details: {{missionDetails.details}}</p>
-<p>Flight Number: {{missionDetails.flight_number}}</p>
-<p>Launch_date: {{missionDetails.launch_date_utc}}</p>
-<p>Launch_success: {{missionDetails.launch_success}}</p>
-<p>Launch_year: {{missionDetails.launch_year}}</p>
+
+<mat-card>
+    <mat-card-title>Mission Details</mat-card-title>
+    <mat-card-content style="padding: 20px;">
+        <p>Mission name: {{missionDetails.mission_name}}</p>
+        <p>Details: {{missionDetails.details}}</p>
+        <p>Flight Number: {{missionDetails.flight_number}}</p>
+        <p>Launch Date: {{missionDetails.launch_date_utc}}</p>
+        <p>Launch Success: {{missionDetails.launch_success}}</p>
+        <p>Launch Year: {{missionDetails.launch_year}}</p>
+        <p>Launch Site:</p>
+        <ul>
+            <li>site ID: {{missionDetails.launch_site.site_id}}</li>
+            <li>site name: {{missionDetails.launch_site.site_name}}</li>
+            <li>site name long: {{missionDetails.launch_site.site_name_long}}</li>
+        </ul>
+        <p>Rocket:</p>
+        <ul>
+            <li>rocket ID: {{missionDetails.rocket.rocket_id}}</li>
+            <li>rocket name: {{missionDetails.rocket.rocket_name}}</li>
+            <li>rocket type: {{missionDetails.rocket.rocket_type}}</li>
+        </ul>
+        <p>Links:</p>
+        <ul>
+            <li><a target="_blank" href = '{{missionDetails.links.article_link}}'>artcile link</a></li>
+            <li><a target="_blank" href = '{{missionDetails.links.mission_patch}}'>mission patch</a></li>
+            <li><a target="_blank" href = '{{missionDetails.links.mission_patch_small}}'>mission_patch_small</a></li>
+            <li><a target="_blank" href = '{{missionDetails.links.article_link}}'>video link</a></li>
+        </ul>
+    </mat-card-content>
+</mat-card>
